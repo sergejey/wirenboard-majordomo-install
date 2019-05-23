@@ -35,7 +35,7 @@ case "$1" in
         cd "$dir"
 
 (while true; do
-    sudo -u "$user" $cmd
+    $cmd
 done)>> "$stdout_log" 2>> "$stderr_log" &
 
         echo $! > "$pid_file"
@@ -49,7 +49,7 @@ done)>> "$stdout_log" 2>> "$stderr_log" &
     if is_running; then
         echo -n "Stopping $name.."
         kill `get_pid`
-        sudo killall php
+        killall php
         for i in {1..10}
         do
             if ! is_running; then
@@ -72,7 +72,7 @@ done)>> "$stdout_log" 2>> "$stderr_log" &
         fi
     else
         echo "Not running"
-        sudo killall php
+        killall php
     fi
     ;;
     restart)
