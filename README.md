@@ -142,6 +142,8 @@ mysql -u root --password=rootpsw db_terminal<db_terminal.sql
 
 ## НАСТРАИВАЕМ NGINX
 
+Для того, чтобы разграничить имеющийся веб-интерфейс контроллера с интерфейсом MajorDoMo, мы настроим последний на отдельный HTTP-порт (82)
+
 Заходим в папку
 ```
 cd /etc/nginx/sites-enabled/
