@@ -187,7 +187,7 @@ update-rc.d majordomo_init defaults
 Через раздел System -> Plugins Market ставим модуль Wirenboard
 
 Прописываем ему следующие настройки:
-[[https://c2n.me/40LENqd.png]]
+![](https://c2n.me/40LENqd.png)
 
 Дополнительно можно настроить часовой пояс и язык.
 
